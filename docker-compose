@@ -1,0 +1,9 @@
+version: '3'
+services:
+    client:
+        build:
+        image: socket-client
+        links:
+        - server
+    server:
+        image: socket-server
