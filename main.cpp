@@ -6,6 +6,7 @@
 #include<sys/socket.h>    //socket
 #include<arpa/inet.h> //inet_addr
 #include <zconf.h>
+#include <fstream>
 
 
 int wyslijPlik(){
@@ -27,6 +28,9 @@ int wyslijPlik(){
         perror("Connect");
         return 1;
     }
+    std::ofstream outfile("prova.jpg");
+
+
 
     FILE *fp = fopen("prova.jpg", "rb");
     if(fp == NULL){
