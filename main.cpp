@@ -12,8 +12,8 @@ int sendFile();
 
 int main(int argc , char *argv[])
 {
-//    return sendText();
-    return sendFile();
+   return sendText();
+  //  return sendFile();
 }
 
 int sendText() {
